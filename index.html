@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ditya Satrya Rochman — Siswa SMKN 13 Bandung jurusan TJKT, calon profesional IT & Networking masa depan." />
+  <meta name="keywords" content="Ditya Satrya Rochman, SMKN 13 Bandung, TJKT, Networking, IT, Portfolio Pelajar" />
+  <meta name="author" content="Ditya Satrya Rochman" />
+  <meta property="og:title" content="Ditya Satrya Rochman | Future IT Professional" />
+  <meta property="og:description" content="Portfolio & Personal Branding — Siswa TJKT SMKN 13 Bandung" />
+  <title>Ditya Satrya Rochman | Future IT Professional</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- AOS Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">DS</span>
+        <span class="logo-text">Ditya</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-bg-grid"></div>
+
+    <div class="hero-content">
+      <p class="hero-greeting" data-aos="fade-down" data-aos-delay="100">👋 Halo, perkenalkan saya</p>
+      <h1 class="hero-name" data-aos="fade-up" data-aos-delay="200">
+        Ditya Satrya<br /><span class="name-highlight">Rochman</span>
+      </h1>
+      <div class="hero-typewriter" data-aos="fade-up" data-aos-delay="400">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-tagline" data-aos="fade-up" data-aos-delay="600">
+        Siswa TJKT · SMKN 13 Bandung · Bandung, Indonesia
+      </p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="800">
+        <a href="#contact" class="btn btn-primary">
+          <i class="bx bx-send"></i> Hubungi Saya
+        </a>
+        <a href="#portfolio" class="btn btn-outline">
+          <i class="bx bx-code-alt"></i> Lihat Portfolio
+        </a>
+      </div>
+      <div class="hero-scroll-hint" data-aos="fade-up" data-aos-delay="1000">
+        <span>Scroll ke bawah</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+
+    <div class="hero-avatar" data-aos="zoom-in" data-aos-delay="300">
+      <div class="avatar-ring"></div>
+      <div class="avatar-ring ring-2"></div>
+      <div class="avatar-box">
+        <div class="avatar-box">
+          <img src="foto1.jpg" alt="Foto Ditya" class="profile-img">
+        </div>
+      </div>
+      <div class="avatar-badge">
+        <i class="bx bx-network-chart"></i>
+        <span>TJKT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ MOTIVASI ══════════════ -->
+  <section class="motivasi">
+    <div class="motivasi-inner" data-aos="zoom-in">
+      <i class="bx bxs-quote-alt-left quote-icon"></i>
+      <p class="motivasi-text">
+        "Saya percaya bahwa <strong>belajar hari ini</strong> adalah <strong>investasi masa depan</strong>."
+      </p>
+      <span class="motivasi-author">— Ditya Satrya Rochman</span>
+    </div>
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">tentang saya</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <p class="section-sub">Kenali saya lebih dalam — siapa saya dan apa yang saya kejar.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Kiri: Narasi -->
+        <div class="about-text" data-aos="fade-right" data-aos-delay="100">
+          <p>
+            Halo! Nama saya <strong>Ditya Satrya Rochman</strong>, seorang pelajar aktif kelas 11
+            di <strong>SMKN 13 Bandung</strong> jurusan <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong>.
+          </p>
+          <p>
+            Saya memiliki minat yang besar di bidang komputer, jaringan, teknologi, dan pengembangan diri.
+            Setiap hari saya berusaha memperluas pengetahuan — dari konfigurasi jaringan, simulasi topologi,
+            hingga dasar pemrograman web.
+          </p>
+          <p>
+            Saya percaya bahwa ilmu yang dipelajari sekarang adalah pondasi untuk karir profesional di masa depan.
+            Semangat belajar dan rasa ingin tahu tinggi adalah kekuatan terbesar saya.
+          </p>
+
+          <!-- Tujuan Karir -->
+          <div class="career-goal">
+            <i class="bx bxs-rocket"></i>
+            <div>
+              <strong>Tujuan Karir</strong>
+              <span>Menjadi profesional di bidang IT, Networking, dan Teknologi — berkontribusi nyata untuk bangsa.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kanan: Info Cards -->
+        <div class="about-cards" data-aos="fade-left" data-aos-delay="200">
+
+          <!-- Biodata -->
+          <div class="info-card">
+            <div class="info-card-header">
+              <i class="bx bx-id-card"></i>
+              <h3>Biodata Singkat</h3>
+            </div>
+            <ul class="info-list">
+              <li><i class="bx bx-user"></i><span><strong>Nama:</strong> Ditya Satrya Rochman</span></li>
+              <li><i class="bx bx-calendar"></i><span><strong>Status:</strong> Pelajar Kelas 11</span></li>
+              <li><i class="bx bx-map-pin"></i><span><strong>Domisili:</strong> Bandung, Indonesia</span></li>
+              <li><i class="bx bx-flag"></i><span><strong>Kewarganegaraan:</strong> Indonesia</span></li>
+            </ul>
+          </div>
+
+          <!-- Pendidikan -->
+          <div class="info-card">
+            <div class="info-card-header">
+              <i class="bx bx-book-open"></i>
+              <h3>Pendidikan</h3>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div>
+                <strong>SMKN 13 Bandung</strong>
+                <span>Teknik Jaringan Komputer & Telekomunikasi (TJKT)</span>
+                <small>2023 — Sekarang</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hobi -->
+          <div class="info-card hobi-card">
+            <div class="info-card-header">
+              <i class="bx bx-heart"></i>
+              <h3>Hobi & Minat</h3>
+            </div>
+            <div class="hobi-tags">
+              <span class="hobi-tag"><i class="bx bx-network-chart"></i> Jaringan Komputer</span>
+              <span class="hobi-tag"><i class="bx bx-code-alt"></i> Coding</span>
+              <span class="hobi-tag"><i class="bx bx-desktop"></i> Teknologi</span>
+              <span class="hobi-tag"><i class="bx bx-book"></i> Membaca</span>
+              <span class="hobi-tag"><i class="bx bx-joystick"></i> Gaming</span>
+              <span class="hobi-tag"><i class="bx bx-wrench"></i> Rakit PC</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PORTFOLIO ══════════════ -->
+  <section class="section portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">karya & proyek</span>
+        <h2 class="section-title">Port<span class="highlight">folio</span></h2>
+        <p class="section-sub">Hasil praktik, proyek, dan pencapaian selama belajar di SMKN 13 Bandung.</p>
+      </div>
+
+      <!-- Filter -->
+      <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="network">Jaringan</button>
+        <button class="filter-btn" data-filter="hardware">Hardware</button>
+        <button class="filter-btn" data-filter="web">Web & OS</button>
+        <button class="filter-btn" data-filter="achievement">Prestasi</button>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card" data-category="network" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-icon-wrap" style="--card-color: #0ea5e9;">
+            <i class="bx bx-network-chart"></i>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Jaringan</span>
+            <h3>Konfigurasi Jaringan Dasar</h3>
+            <p>Konfigurasi IP address, subnet mask, dan default gateway pada perangkat jaringan di lingkungan lab.</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-status status-done">Selesai</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="network" data-aos="fade-up" data-aos-delay="150">
+          <div class="card-icon-wrap" style="--card-color: #6366f1;">
+            <i class="bx bx-git-branch"></i>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Jaringan</span>
+            <h3>Routing & Subnetting</h3>
+            <p>Praktik static routing, dynamic routing (RIP), dan perhitungan subnetting dengan metode VLSM.</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-status status-done">Selesai</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="network" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-icon-wrap" style="--card-color: #f59e0b;">
+            <i class="bx bx-desktop"></i>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Simulasi</span>
+            <h3>Cisco Packet Tracer</h3>
+            <p>Simulasi topologi jaringan (star, mesh, ring) menggunakan Cisco Packet Tracer dengan konfigurasi lengkap.</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-status status-done">Selesai</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="hardware" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-icon-wrap" style="--card-color: #10b981;">
+            <i class="bx bx-chip"></i>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Hardware</span>
+            <h3>Perakitan Komputer</h3>
+            <p>Merakit PC dari nol — memasang motherboard, RAM, CPU, power supply, dan storage secara tepat.</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-status status-done">Selesai</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="web" data-aos="fade-up" data-aos-delay="150">
+          <div class="card-icon-wrap" style="--card-color: #ef4444;">
+            <i class="bx bx-server"></i>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Sistem Operasi</span>
+            <h3>Instalasi Sistem Operasi</h3>
+            <p>Instalasi Windows 10/11 dan Linux Ubuntu dari awal, termasuk partisi disk dan konfigurasi dasar.</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-status status-done">Selesai</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-icon-wrap" style="--card-color: #8b5cf6;">
+            <i class="bx bx-code-block"></i>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Web</span>
+            <h3>Website Sederhana</h3>
+            <p>Pembuatan halaman web menggunakan HTML & CSS dasar — tampilan profil dan landing page sederhana.</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-status status-progress">Ongoing</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="achievement" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-icon-wrap" style="--card-color: #f59e0b;">
+            <i class="bx bxs-medal"></i>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Prestasi</span>
+            <h3>Sertifikat & Prestasi</h3>
+            <p>Kumpulan sertifikat pelatihan, workshop IT, dan pencapaian akademik selama di SMKN 13 Bandung.</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-status status-progress">Diperbarui</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SKILLS ══════════════ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">kemampuan teknis</span>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <p class="section-sub">Skill yang sedang saya kembangkan sebagai calon profesional IT.</p>
+      </div>
+
+      <div class="skills-layout">
+
+        <!-- Progress Bars -->
+        <div class="skills-bars" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="skills-sub-title"><i class="bx bx-bar-chart-alt-2"></i> Technical Skills</h3>
+
+          <div class="skill-item">
+            <div class="skill-label">
+              <span><i class="bx bx-network-chart"></i> Networking</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75" style="--bar-color: #0ea5e9;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-label">
+              <span><i class="bx bx-desktop"></i> Cisco Packet Tracer</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="70" style="--bar-color: #6366f1;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-label">
+              <span><i class="bx bxl-html5"></i> HTML & CSS</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="60" style="--bar-color: #f59e0b;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-label">
+              <span><i class="bx bx-wrench"></i> Troubleshooting Komputer</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80" style="--bar-color: #10b981;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-label">
+              <span><i class="bx bxl-microsoft"></i> Microsoft Office</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85" style="--bar-color: #ef4444;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills Cards -->
+        <div class="skills-soft" data-aos="fade-left" data-aos-delay="200">
+          <h3 class="skills-sub-title"><i class="bx bx-heart-circle"></i> Soft Skills</h3>
+
+          <div class="soft-grid">
+            <div class="soft-card">
+              <i class="bx bx-group"></i>
+              <span>Teamwork</span>
+            </div>
+            <div class="soft-card">
+              <i class="bx bx-bulb"></i>
+              <span>Problem Solving</span>
+            </div>
+            <div class="soft-card">
+              <i class="bx bx-time-five"></i>
+              <span>Manajemen Waktu</span>
+            </div>
+            <div class="soft-card">
+              <i class="bx bx-book-reader"></i>
+              <span>Semangat Belajar</span>
+            </div>
+            <div class="soft-card">
+              <i class="bx bx-conversation"></i>
+              <span>Komunikasi</span>
+            </div>
+            <div class="soft-card">
+              <i class="bx bx-target-lock"></i>
+              <span>Fokus & Disiplin</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="tools-section">
+            <h4>Tools yang Digunakan</h4>
+            <div class="tools-row">
+              <span class="tool-badge"><i class="bx bxl-windows"></i> Windows</span>
+              <span class="tool-badge"><i class="bx bxl-tux"></i> Linux</span>
+              <span class="tool-badge"><i class="bx bx-network-chart"></i> Cisco IOS</span>
+              <span class="tool-badge"><i class="bx bx-code-alt"></i> VS Code</span>
+              <span class="tool-badge"><i class="bx bxl-github"></i> GitHub</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">hubungi saya</span>
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <p class="section-sub">Punya pertanyaan, kolaborasi, atau sekadar ingin berkenalan? Jangan ragu untuk menghubungi saya!</p>
+      </div>
+
+      <div class="contact-layout">
+
+        <!-- Info kontak -->
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+          <h3>Informasi Kontak</h3>
+          <p>Saya terbuka untuk diskusi, kolaborasi, atau sekadar berbagi informasi seputar IT dan teknologi.</p>
+
+          <div class="contact-items">
+            <a href="mailto:dityasatrya3@email.com" class="contact-item">
+              <div class="contact-icon" style="--c: #0ea5e9;"><i class="bx bxl-gmail"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>dityasatrya3@email.com</span>
+              </div>
+            </a>
+            <a href="https://instagram.com/dzyperr" target="_blank" class="contact-item">
+              <div class="contact-icon" style="--c: #e1306c;"><i class="bx bxl-instagram"></i></div>
+              <div>
+                <strong>Instagram</strong>
+                <span>@dzyperr</span>
+              </div>
+            </a>
+            <a href="https://wa.me/6285185912956" target="_blank" class="contact-item">
+              <div class="contact-icon" style="--c: #25d366;"><i class="bx bxl-whatsapp"></i></div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+62 851-8591-2956</span>
+              </div>
+            </a>
+            <div class="contact-item no-link">
+              <div class="contact-icon" style="--c: #f59e0b;"><i class="bx bx-map-pin"></i></div>
+              <div>
+                <strong>Lokasi</strong>
+                <span>Bandung, Jawa Barat, Indonesia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap" data-aos="fade-left" data-aos-delay="200">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="fname"><i class="bx bx-user"></i> Nama Lengkap</label>
+              <input type="text" id="fname" name="nama" placeholder="Masukkan nama Anda..." required />
+            </div>
+            <div class="form-group">
+              <label for="femail"><i class="bx bx-envelope"></i> Email</label>
+              <input type="email" id="femail" name="email" placeholder="Masukkan email Anda..." required />
+            </div>
+            <div class="form-group">
+              <label for="fsubject"><i class="bx bx-edit"></i> Subjek</label>
+              <input type="text" id="fsubject" name="subjek" placeholder="Topik pesan Anda..." required />
+            </div>
+            <div class="form-group">
+              <label for="fmessage"><i class="bx bx-message-detail"></i> Pesan</label>
+              <textarea id="fmessage" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="bx bx-send"></i> Kirim Pesan
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="bx bx-check-circle"></i> Pesan berhasil dikirim! Terima kasih.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Ditya<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-tagline">Student of Networking & Future IT Professional</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> <strong>Ditya Satrya Rochman</strong>. Dibuat dengan
+        <i class="bx bxs-heart" style="color:#ef4444;"></i> di Bandung, Indonesia.
+      </p>
+      <p class="footer-school">
+        <i class="bx bx-graduation"></i> SMKN 13 Bandung — Teknik Jaringan Komputer & Telekomunikasi
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i class="bx bx-chevron-up"></i>
+  </button>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
