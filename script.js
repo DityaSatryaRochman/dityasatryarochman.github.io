@@ -225,22 +225,34 @@ function animateSkillBars() {
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const btn = contactForm.querySelector('button[type="submit"]');
   btn.disabled = true;
   btn.innerHTML = '<i class="bx bx-loader-alt bx-spin"></i> Mengirim...';
 
-  // Simulasi pengiriman (ganti dengan EmailJS / Formspree jika perlu)
-  setTimeout(() => {
-    btn.innerHTML = '<i class="bx bx-send"></i> Kirim Pesan';
-    btn.disabled = false;
+  const data = new FormData(contactForm);
+
+  const response = await fetch(contactForm.action, {
+    method: 'POST',
+    body: data,
+    headers: {
+      Accept: 'application/json'
+    }
+  });
+
+  if(response.ok){
     formSuccess.classList.add('show');
     contactForm.reset();
 
-    setTimeout(() => formSuccess.classList.remove('show'), 5000);
-  }, 1800);
+    setTimeout(() => {
+      formSuccess.classList.remove('show');
+    }, 5000);
+  }
+
+  btn.innerHTML = '<i class="bx bx-send"></i> Kirim Pesan';
+  btn.disabled = false;
 });
 
 /* ════════════════════════════════════
